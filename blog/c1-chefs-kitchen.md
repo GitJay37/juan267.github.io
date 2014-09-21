@@ -1,27 +1,23 @@
-<!-- This template is in markdown, not html, so
-  it will not render beautifully when you copy and
-  paste it into your github.io site, but it will at
-  least be published. Next week you'll be creating a
-  blog template using HTML and CSS and you'll be able
-  to copy and paste the blog posts from week 1 in there
-  to make them pretty next week.
+# Learning to Learn
+#### DBC Culture
+#### 9/21/2014
 
-  For now, please replace the title, subtitle (if desired),
-  and date with the text you would like. Markdown is pretty
-  simple, so you can just feel free to type. =) -->
+Before talking about DBC, let me tell you a little something regarding my prior learning experiences both in college and school.
 
+I had two different approaches in school; during the first years I was generally see as one of the best in my class, I follow teachers instructions with extreme precision and never question what they taught to me.  This all change when I grow up and got into middle and high school, my mind was different I was no longer happy following instructions and most of time I felt bored at class except at times when the teacher was really exceptional.  This was the same time when the Internet appear on my life, so now I was spending most of my time researching and reading things that got my interest on different webpages. I became a very troublesome student for teachers because I was always questioning what they where teaching to me, this became so extreme that my Spanish teacher wanted that I took the class alone in the library away from the rest of the class, I fought my way to not let that happen and won. But my grades where hurt my mom was not happy with me, and the best thing was that I was fine with it because I knew that I was learning a lot more than most of my classmates. When I finish school some of the teachers love me because they respect my curiosity and others hate me for being such a pain in the ass, but the thing that stuck with me is that learning is all about curiosity and motivation, and this are things that traditional education in my country don’t fully exploit on children.
 
-# Title
-#### Subtitle
-#### Date
+After school I enrolled in one of the most respected universities of Colombia. I was going to study Business administration, the reasons where clear to me I wanted to become an entrepreneur so business seems to be a reasonable path to study, what a terrible mistake, those where the worst years of my life. The approach of the business faculty was to form great 9 to 5 workers for big multinational companies, this was perfect for most of the students but for me it was a total nightmare, this was not what I wanted, I wanted to be tough how to start companies, think of ideas and execute them. This frustration let me to start reading and reading about the startup world and the stories of Silicon Valley and that’s when I realized of the potential that learning to code could give to an individual. It’s that empowerment to be able to build almost anything with knowledge and dedication, that made realized that I had choose the wrong career. Nonetheless I did finish college and got my degree , I don’t know if I ever going to use it but it doesn’t hurt to have it.
 
-Paragraph 1
+Ok enough about my past lets talk about DBC.  Being accepted have been on of the most exciting things that have happen to me in a long time.   I love that you see yourself as an experiment, because that’s how I feel that all the things that I do are. One of the things that I have learn during my life is that we don’t know anything, and the less that you know the more open you are to new things and solutions, and being aware that you are an experiment and that everything that you are doing is just the your best shot at it, gives you a more real more humble approach to things and gets rid off of false expectations and misconceptions.
 
-Paragraph 2
+My impression of DBC is that first you are a bunch of nice people, people that have sharing and collaborating as a core value and that has a hunger for knowledge and self-achievement. I really feel identified with this way of thinking and one of the things that I hated the most during my time in college was stumping with people that was protective of their work and that did not want to share with others in order to feel superior and had a competitive edge. I’m not a competitive person and never have been so I feel at rest that you don’t encourage a competitive atmosphere.
 
-Paragraph 3
+I never had feel very identified with the common Colombian culture, I was always more interested in movies, music, tv shows and games from other parts of the world like Japan, England and USA. My friends are not really that much interested in technology, computers or in general geeky stuff, so DBC is going to be one of my first experiences of being surrounded by people that are more likely to share my interests and this is one of the things that I’m looking for the most.
 
-Add as many paragraphs as you want!!!
+At the same time I’m shaking with nerves, I’m an introvert myself so getting to know people has always been difficult to me but I’m willing to give my best at it, and I think that people at DBC are going to be more easily approachable than in others places where I have been.
+
+Attending this learning environment has been on my mind for the last 2 years, living in the center of the startup scene has been my dream for the last 5 years, getting to know people that have similar interest to me and that are hungry for knowledge and full of curiosity is a privilege that I have yet to experience. So in summary you bet that I’m exited to participate in DBC and you can be sure that I’m going to be living in the kitchen not eating in the table.
+
 
 
 
