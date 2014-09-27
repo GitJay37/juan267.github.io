@@ -143,7 +143,7 @@ font-size: 30px;
   height: 990px;
   /*background-color: blue;*/
   top:0px;
-  background: url("/Users/jorgegomez/Documents/DBC/juan267.github.io/img/brickwall.png")
+  background: url("../img/brickwall.png")
 
 }
 
@@ -156,7 +156,7 @@ font-size: 30px;
   height: 990px;
   background-color: yellow;
   top:-18px;
-  background: url("/Users/jorgegomez/Documents/DBC/juan267.github.io/img/congruent_outline.png")
+  background: url("../img/congruent_outline.png")
 }
 
 #projects table {
@@ -188,7 +188,7 @@ font-size: 30px;
   height: 990px;
   background-color: black;
   top:-55px;
-  background: url("/Users/jorgegomez/Documents/DBC/juan267.github.io/img/pixeltokyo.jpeg")
+  background: url("../img/pixeltokyo.jpeg")
 }
 
 #blog h3, p {
@@ -220,7 +220,7 @@ footer {
   top:-80px;
   bottom: 0px;
   height: 150px;
-  background: url("/Users/jorgegomez/Documents/DBC/juan267.github.io/img/grey_wash_wall.png")
+  background: url("../img/grey_wash_wall.png")
 }
 
 .footer {
