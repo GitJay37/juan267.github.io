@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ghost in the Machine</title>
+  <link rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
+</head>
+<body>
+<header>
+  <h1>Conversations with the Ghost in the Machine</h1>
+  <h2><span>By Juan Gomez</span></h2>
+</header>
+<div id="content">
+  <div id="col1">
+    <h2>Welcome to My Blog</h2>
+    <img src="../img/lafotocarolina.jpg" alt="" width="102" Height="102" class="image"/>
+    <p class="indent"><strong>Conversations with the Ghost in the Machine</strong> Is a blog that i started as part of my learning path in Dev Bootcamp. In it you will find articles about web development and the insights that i  gain during this weeks of deep learning. i try not to go to deep into techinical descriptios about technologies, but more about their potential and holistic use. </p>
+    <h3>Identity Crisis (Classes or IDs)</h3>
+    <p>So you want to start using best practices regarding ID and Classes on CSS but you don’t know where to start, fear no more this is Identity crisis for dummies.</p>
+    <p>Lets start with the basics, the first things that you got to ask yourself when deciding is, Does this element that I’m given this attribute is unique or does it occur several times during the whole length of the HTML document? , You may have deduct the answers if it occurs several times give it a Class, if it happens only once during the whole document give it an ID.  Simple as that we are done you don’t need to know anything else except that you do there are other factors that are necessary to consider, lets take a closer look.</p>
+
+    <p>So Classes allow you to quickly change the style to a lot of elements by grouping them in a logical way, in contrast ID lets you specifically target a particular element and change only its attributes.  IS a good idea to give IDs to unique parts of your web page like the Header, footer, side bars and other containers in your site, because in this way you can target them specifically and also link them using anchors tags, functionality that is not possible to achieve with classes.  On the other hand is helpful to give classes to reoccurring elements like articles, images, paragraph and headings so that you can easily modify them all and keep the integrity of the webpage.</p>
+
+    <p>IDs by definition have a higher rank than Classes witch means that and ID will always triumph a Class when a conflict occurs.  This is helpful because for example we if we have defined a class that groups all elements that have a green background and a black border we can assign this same class to a new element and also and ID to it so now this new element has inherit the same black border as their peers in the class but can have a red background thanks to its ID.</p>
+
+    <p>So easy peasy when you are trying to decide weather to use an ID or a Class just follow the rule of thumb, is the element is unique and only happens once in the document go for an ID, if it is a recurring element go for a class, and don’t forget that id have a higher weight than classes and will override them.</p>
+
+    <p>See you later on another conversation with the machine.</p>
+
+  </div>
+  <div id="col2" >
+    <h3>Contact and Social</h3>
+    <table>
+      <tr>
+        <td><a href="https://www.facebook.com/profile.php?id=512694080"><img src="../img/facebook.png" alt=""></a></td>
+        <td><a href="https://www.linkedin.com/pub/juan-gomez-aranzazu/a3/a84/718"><img src="../img/linkedin.png" alt=""></a></td>
+      </tr>
+      <tr>
+        <td><a href="https://twitter.com/ozu99"><img src="../img/twitter.png" alt=""></a></td>
+        <td><a href="https://plus.google.com/u/0/115783235935041884017/posts"><img src="../img/google.png" alt=""></a></td>
+      </tr>
+    </table>
+    <h3>Cool links<br>That i like</h3>
+    <ul>
+      <li><a href="http://theawesomer.com/">The Awsomer</a></li>
+      <li><a href="http://www.theverge.com/">The Verge</a></li>
+      <li><a href="http://www.airliners.net/">Airliners</a></li>
+      <li><a href="http://io9.com/">Io9</a></li>
+      <li><a href="http://hypem.com/">The Hype Machine</a></li>
+    </ul>
+  </div>
+</div>
+<div id="footer">
+
+</div>
+</body>
+</html>
