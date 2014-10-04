@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ghost in the Machine<</title>
+  <link rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
+</head>
+<body>
+<header>
+  <h1>Conversations with the Ghost in the Machine</h1>
+  <h2><span>By Juan Gomez</span></h2>
+</header>
+<div id="content">
+  <div id="col1">
+    <h2>Welcome to My Blog</h2>
+    <img src="../img/lafotocarolina.jpg" alt="" width="102" Height="102" class="image"/>
+    <p class="indent"><strong>Conversations with the Ghost in the Machine</strong> Is a blog that i started as part of my learning path in Dev Bootcamp. In it you will find articles about web development and the insights that i  gain during this weeks of deep learning. i try not to go to deep into techinical descriptios about technologies, but more about their potential and holistic use. </p>
+    <h3>Creating order in Ruby , Hashes and Arrays 101</h3>
+    <p>Without order there’s just chaos, and we humans can and for most of the time live in chaos, but for a control freak like computer chaos is not an acceptable choice.  So we need to bring order in to their world so they don’t get a nervous wreck down.  Let me introduce you to my friend the Array and his sidekick the Hash.  With their help we are going to create something that is call Data structures, which as it names implies creates structures so that data points can be organized in a neat way that let us and the computer keep track of them in a easy fashion.</p>
+
+    <p>Lets talk first of the Array:</p>
+
+    <p>Arrays are to sum it up in the most simple way lists. They let us create list of things, any kind of things numbers, words, or symbols what ever you want.  The best part is that they are very easy to make:</p>
+
+    <p>new_list=[]</p>
+
+    <p>And there you go you have your new array with the name new_list. But wait a minute my new array doesn’t have any items in it is empty, and you are right we just created and empty array but we can solve that pretty easily by adding elements o our array:</p>
+
+    <p>new_list[0]= “study” <br>
+      new_list[1]= “play games”</p>
+
+    <p>if we tell ruby to print our array it would look like this:</p>
+
+    <p>[“study”, “play games”]</p>
+
+    <p>So wait why did “study” appear first than “play games” I want to play games first. But you cant as we told ruby that study would be first on the list by specifying its index number to be 0.  And this is where the magic of arrays start to show itself, all the arrays that we create in ruby have and index number associated to them, the first element of the array will always be element 0 and then element 1 and so on, why do they start at 0 and not 1 like a normal person would do, because programmers are not normal persons deal with it. So now we know how to create arrays how to add elements to it and that each element is associated to an index number that lets us identified the element inside the array, but what if we don’t want to associate our elements with numbers, we want to be more explicit. That’s where hashes come into action.</p>
+
+    <p>Lets talk about Hashes:</p>
+
+    <p>Hashes are exactly the same as arrays but instead of indexing elements with numbers you can choose any kind of element to be associated with other element,  in what its call a Key-Value pair. Lets take a closer look at that:</p>
+
+   <p>my_hash = { <br>
+         “name” => “juan” <br>
+         “last name” => “gomez” <br>
+         “age” => “24 <br>
+       }</p>
+
+    <p>if I ask ruby to print this hash it would return the following:</p>
+
+    <p>[name=>juan, last_name=>gomez, age=>24]</p>
+
+    <p>As you can see every value its associated with a key not a number, so if I want to print the value of what a key is referring I just do:</p>
+
+    <p>My_hash[name]  and this will return => “juan”</p>
+
+    <p>So how do I decide witch one to use. Well it depends on your style and what you are trying to do.  If you are making a plain list that with items that have not implicit relationship with anything outside the list use an Array it as it may be simpler to keep track of things with just index number. But if you are making a list that in which its elements clearly have and association with a description like the one in the example above use a hash.</p>
+
+    <p>By using both hashes and arrays you will be able to store information in your programs and have later access to it. The way you access that data depends on the method that you choose to use, sometimes it will make more sense to use hashes and other times to arrays.</p>
+
+  </div>
+  <div id="col2" >
+    <h3>Contact and Social</h3>
+    <table>
+      <tr>
+        <td><a href="https://www.facebook.com/profile.php?id=512694080"><img src="../img/facebook.png" alt=""></a></td>
+        <td><a href="https://www.linkedin.com/pub/juan-gomez-aranzazu/a3/a84/718"><img src="../img/linkedin.png" alt=""></a></td>
+      </tr>
+      <tr>
+        <td><a href="https://twitter.com/ozu99"><img src="../img/twitter.png" alt=""></a></td>
+        <td><a href="https://plus.google.com/u/0/115783235935041884017/posts"><img src="../img/google.png" alt=""></a></td>
+      </tr>
+    </table>
+    <h3>Cool links<br>That i like</h3>
+    <ul>
+      <li><a href="http://theawesomer.com/">The Awsomer</a></li>
+      <li><a href="http://www.theverge.com/">The Verge</a></li>
+      <li><a href="http://www.airliners.net/">Airliners</a></li>
+      <li><a href="http://io9.com/">Io9</a></li>
+      <li><a href="http://hypem.com/">The Hype Machine</a></li>
+    </ul>
+  </div>
+</div>
+<div id="footer">
+
+</div>
+</body>
+</html>
