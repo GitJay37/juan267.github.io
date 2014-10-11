@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ghost in the Machine<</title>
+  <link rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
+</head>
+<body>
+<header>
+  <h1>Conversations with the Ghost in the Machine</h1>
+  <h2><span>By Juan Gomez</span></h2>
+</header>
+<div id="content">
+  <div id="col1">
+    <h2>Welcome to My Blog</h2>
+    <img src="../img/lafotocarolina.jpg" alt="" width="102" Height="102" class="image"/>
+    <p class="indent"><strong>Conversations with the Ghost in the Machine</strong> Is a blog that i started as part of my learning path in Dev Bootcamp. In it you will find articles about web development and the insights that i  gain during this weeks of deep learning. i try not to go to deep into techinical descriptios about technologies, but more about their potential and holistic use. </p>
+    <h3>Enumerable to the Rescue:</h3>
+    <p>So things are getting serious around here, no more fuzzing around with normal operators like + - /* , that’s child play, don’t even try to look cool just because you know how to use to_s , to_i or other as  you may thing fancy methods, don’t even try to say you are a programmer because you managed to write a while loop. Its time to play with the big boys and learn their weapons of mass destruction, its time to say hello to my little friend the Enumerable. </p>
+
+    <p>The enumerable module in ruby lets us use lots of very fun and productive methods in arrays and hashes by iterating over them. Look at all the methods that the enumerable provide to us: </p>
+
+    <p> LOOK AT ALL THESE METHODS! • all?, any?, collect, detect, each_cons, each_slice, each_with_index, entries, enum_cons, enum_slice, enum_with_index, ﬁnd, ﬁnd_all, grep, include?, inject, map, max, member?, min, partition, reject, select, sort, sort_by, to_a, to_set, zipMonday,</p>
+
+    <p>I know that’s a lot to take so for now lets just focus on one of those methods and get deep with it. The chosen method will be group_by.  You may ask why did you choose that one, the only answers that I can provide to you is because I felt in the mood for grouping don’t you?  So hats does exactly group_by does? , Well is pretty simple it groups elements by a condition that we pass to it, lets take a look</p>
+
+    <p>We have the following Array:</p>
+
+    <p>airplanes = ["B747","B757","B767","B777","A320","A330","A340","A350","A380"]</p>
+
+    <p>grouped_by_first_letter = airplanes.group_by { |s| s[0] }</p>
+
+    <p>That’s going to return:</p>
+
+    <p>#{"B"=>["B747","B757","B767","B777",],"A"=>[“A320","A330","A340","A350","A380"]],</p>
+
+    <p>So as you can see we started with an array, but ended with Hash that groups our elements by their first letter that in this case is valuable because we now have our airplanes sorted by manufacture. </p>
+
+    <p>We can group by any kind of condition that we want in this case by length of each string: </p>
+
+    <p>cats = ["Tiger", "Lion", "Puma", "Leopard", "Jaguar","Cheetah", "Bobcat"]
+      grouped_by_length = cats.group_by { |cat| cat.length }</p>
+
+    <p>The return will be :</p>
+    <p>#{5=>["Tiger"], 4=>["Lion", "Puma"], 7=>["Leopard", "Cheetah"], 6=>["Jaguar", "Bobcat"]}</p>
+
+    <p>There’s a lot of power that you can get from this method, know that you know how to use it, you can feel comfortable grouping any array that you have in the way that you want. </p>
+
+    <p>See ya in another conversation with the machine.</p>
+
+  </div>
+  <div id="col2" >
+    <h3>Contact and Social</h3>
+    <table>
+      <tr>
+        <td><a href="https://www.facebook.com/profile.php?id=512694080"><img src="../img/facebook.png" alt=""></a></td>
+        <td><a href="https://www.linkedin.com/pub/juan-gomez-aranzazu/a3/a84/718"><img src="../img/linkedin.png" alt=""></a></td>
+      </tr>
+      <tr>
+        <td><a href="https://twitter.com/ozu99"><img src="../img/twitter.png" alt=""></a></td>
+        <td><a href="https://plus.google.com/u/0/115783235935041884017/posts"><img src="../img/google.png" alt=""></a></td>
+      </tr>
+    </table>
+    <h3>Cool links<br>That i like</h3>
+    <ul>
+      <li><a href="http://theawesomer.com/">The Awsomer</a></li>
+      <li><a href="http://www.theverge.com/">The Verge</a></li>
+      <li><a href="http://www.airliners.net/">Airliners</a></li>
+      <li><a href="http://io9.com/">Io9</a></li>
+      <li><a href="http://hypem.com/">The Hype Machine</a></li>
+    </ul>
+  </div>
+</div>
+<div id="footer">
+
+</div>
+</body>
+</html>
