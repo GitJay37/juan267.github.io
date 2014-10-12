@@ -54,10 +54,11 @@ a:hover {
 /* Header */
 
 header {
-  width: 730px;
+  width: 830px;
   height: 250px;
   margin: 0 auto;
-  background-color:rgba(1, 45, 49, 0.7);
+  /*background-color:#31855E*/
+  background: url("../img/congruent_outline.png")
 }
 
 header h1 {
@@ -74,21 +75,23 @@ header h2 {
 /* content */
 
 #content {
-  width: 730px;
+  width: 830px;
   margin: 0 auto;
 }
 
 #col1 {
   float: left;
-  width: 500px;
-  background-color: rgba(1, 45, 49, 0.7);
+  width: 600px;
+  /*background-color: rgba(1, 45, 49, 1);*/
+  background: url("../img/congruent_outline.png");
   padding: 10px;
 }
 
 #col2 {
   float: right;
   width: 190px;
-  background-color: rgba(1, 45, 49, 0.7);
+  /*background-color: rgba(1, 45, 49, 0.7);*/
+  background: url("../img/congruent_outline.png");
   padding: 10px;
 }
 
