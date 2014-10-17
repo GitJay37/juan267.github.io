@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ghost in the Machine<</title>
+  <link rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
+</head>
+<body>
+<header>
+  <h1>Conversations with the Ghost in the Machine</h1>
+  <h2><span>By Juan Gomez</span></h2>
+</header>
+<div id="content">
+  <div id="col1">
+    <h2>Welcome to My Blog</h2>
+    <img src="../img/lafotocarolina.jpg" alt="" width="102" Height="102" class="image"/>
+    <p class="indent"><strong>Conversations with the Ghost in the Machine</strong> Is a blog that i started as part of my learning path in Dev Bootcamp. In it you will find articles about web development and the insights that i  gain during this weeks of deep learning. i try not to go to deep into techinical descriptios about technologies, but more about their potential and holistic use. </p>
+    <h3>Lets talk about Classes: </h3>
+    <p>So by definition when we are coding we are trying to talk with the computer and explain to it how does our world works. So we need a way to describe as literal as we can the way things are order and classified in our real world to our dumber but quicker silicon friends.</p>
+
+    <p>Ruby lets us do that by using the very important Class object. Thing of it like when you where in biology class (the kind of class you had in school), i would guess that your teacher try to explain to you how taxonomy works and how its proposed its to classified the beings that exist in the planet. It does this by starting with the highest level of groups that some beings can be classified and then starts to go down level by level each time disaggregating more each integrant of a group until you get to the most unique being you can have.  Quick example:</p>
+
+    <img src="http://www0.cs.ucl.ac.uk/staff/a.hunter/tradepress/taxfig1.gif" width="600">
+
+    <p>Ruby classes work in the same way you start with the mother of all the almighty Object class and then start going down form there until you have the most basic objects themselves. Ruby also lets you create your own classes so that you can mimic the real world and explain it to your computer. Example of this:</p>
+
+    <p>class Airplanes <br>
+          def initialize(model, manufacturer) <br>
+            @model = model <br>
+            @manufacturer = manufacturer <br>
+          end <br>
+
+          def description <br>
+            puts "This is a #{model} manufacture by #{manufacturer}"<br>
+          end<br>
+        end<br>
+
+        A330 = Airplanes.new("A330","Airbus")</p>
+
+    <p>In the example above I create the class Airplanes witch groups all airplanes that exist in my universe, it also stores so information about each instance of airplanes( An instance of airplane it’s a fancier ay to say a member or integrant of the class). I also gave my class the power to describe each one of its instances with the instance method (description). So now my computer know that airplanes is a class that stores all airplanes that exist in our program, it also knows the description of each member of airplanes and can give me back that information when I need it, thank you computer you are so kind. And look we also created our first instance of airplanes, the wonderful A330.</p>
+
+
+    <a href="index.html">Home</a>
+  </div>
+  <div id="col2" >
+    <h3>Contact and Social</h3>
+    <table>
+      <tr>
+        <td><a href="https://www.facebook.com/profile.php?id=512694080"><img src="../img/facebook.png" alt=""></a></td>
+        <td><a href="https://www.linkedin.com/pub/juan-gomez-aranzazu/a3/a84/718"><img src="../img/linkedin.png" alt=""></a></td>
+      </tr>
+      <tr>
+        <td><a href="https://twitter.com/ozu99"><img src="../img/twitter.png" alt=""></a></td>
+        <td><a href="https://plus.google.com/u/0/115783235935041884017/posts"><img src="../img/google.png" alt=""></a></td>
+      </tr>
+    </table>
+    <h3>Cool links<br>That i like</h3>
+    <ul>
+      <li><a href="http://theawesomer.com/">The Awsomer</a></li>
+      <li><a href="http://www.theverge.com/">The Verge</a></li>
+      <li><a href="http://www.airliners.net/">Airliners</a></li>
+      <li><a href="http://io9.com/">Io9</a></li>
+      <li><a href="http://hypem.com/">The Hype Machine</a></li>
+    </ul>
+  </div>
+</div>
+<div id="footer">
+
+</div>
+</body>
+</html>
