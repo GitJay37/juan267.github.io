@@ -33,6 +33,27 @@ ul li {
   padding: 2px 0 5px 0;
 }
 
+ol {
+  background:#036 url(/img/gutter.gif) 2.3em 0 repeat-y;
+  overflow:auto;
+  font-family:"Courier New",Courier,mono;
+  margin:0;
+  padding:1em 0 1em 2.8em;
+  color:#fff;
+  width:90%;
+}
+
+pre {
+  font-family:     "Courier New"
+                    Courier
+                    monospace;
+}
+#content ol li {
+  background:#ffc;
+  font-size:small;
+}
+#content ol code {color:#036;}
+
 a {
   color: white;
 }
