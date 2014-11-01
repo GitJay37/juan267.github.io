@@ -1,0 +1,126 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Airport Game</title>
+
+</head>
+<body>
+  <div id="airport">
+    <div id="plane">
+    </div>
+    <div id="fuel">
+    </div>
+    <div id="passangers">
+    </div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: justify;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      color: white;
+      }
+    #airport {
+      margin: 0 auto;
+      width: 500px;
+      height: 320px;
+      border: 4px solid black;
+      padding: 0-auto;
+      position: relative;
+      background-image: url("http://img.brothergames.com/v2/android/screenshots/98/airport_craziness_59298_1.jpeg");
+    }
+    #plane {
+     position: absolute;
+     height:30px;
+     width: 30px;
+     background-image: url("http://www.popularmechanics.com/cm/popularmechanics/images/zG/airplane-icon-30.jpg");
+     left: 250px;
+     bottom: 0px;
+    }
+
+    #passangers {
+     position: absolute;
+     height:30px;
+     width: 30px;
+     background-image: url("http://familyinequality.files.wordpress.com/2010/03/toilet-gender.jpg");
+     left: 250px;
+     bottom: 50px;
+    }
+
+    #fuel {
+     position: absolute;
+     height:40px;
+     width: 40px;
+     background-image: url("http://tips.slaw.ca/wp-content/uploads/2014/01/GasCap.jpg");
+     left: 126px;
+     bottom: 56px;
+    }
+  </style>
+  <script>
+      var airport = document.getElementById("airport");
+      var planeIcon = document.getElementById("plane");
+      var passangers = document.getElementById("passangers");
+      var fuel = document.getElementById("fuel");
+
+      var plane = {
+        name: "747-400",
+        passangers: false,
+        fuel: false
+      };
+
+      var passangers = {
+        number: 300,
+        location: "terminal",
+        destination: "Cancun"
+      };
+
+      var fuel = {
+        lb: 100000,
+        x: 126,
+        y: 56
+      };
+
+      var positionLeft = 250;
+      var positionBottom = 0;
+
+      function move(e) {
+        if (e.keyCode === 39) {
+          if (positionLeft < 450) {
+            positionLeft += 30;
+            planeIcon.style.left = positionLeft + "px";
+          }
+        }
+        if (e.keyCode === 37) {
+          if (positionLeft > 25) {
+            positionLeft -= 30;
+            planeIcon.style.left = positionLeft + "px";
+          }
+        }
+        if (e.keyCode === 38) {
+          if (positionBottom < 220) {
+            positionBottom += 30;
+            planeIcon.style.bottom = positionBottom + "px";
+          }
+        }
+        if (e.keyCode === 40) {
+          if (positionBottom > 0) {
+            positionBottom -= 30;
+            planeIcon.style.bottom = positionBottom  + "px";
+          }
+        }
+        refueling();
+      };
+
+      document.onkeydown = move;
+
+      var refueling = function() {
+        if (( fuel.x - 15 <= positionLeft) && (fuel.y - 15 <= positionBottom) && ( fuel.x - 15 >= positionLeft) && (fuel.y - 15 >= positionBottom)) {
+          var refuel = confirm("Do you want to refuel");
+          plane.fuel = fuel.lb;
+        }
+      };
+
+  // </script>
+</body>
+</html>
