@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -5,6 +6,8 @@
 
 </head>
 <body>
+  <h1>Welcome to the Airport Game</h1>
+  <p>Your goal is to take your passangers to Cancun!, for that you will need the tower to give you clearance for takeoff <br> The only way for the tower to clear you for takeoof is that you first pickup your passangers and then<br> fill your tanks with fuel. You will win once you are in Cancun!</p>
   <div id="airport">
     <div id="plane">
     </div>
@@ -21,6 +24,9 @@
       font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
       color: white;
       }
+    h1 {
+      text-align: center;
+    }
     #airport {
       margin: 0 auto;
       width: 500px;
@@ -43,9 +49,9 @@
      position: absolute;
      height:30px;
      width: 30px;
-     background-image: url("http://familyinequality.files.wordpress.com/2010/03/toilet-gender.jpg");
+     background-image: url("https://fortress.wa.gov/parks/apps/aor-edit/icons/a_ToiletIcon.gif");
      left: 250px;
-     bottom: 50px;
+     bottom: 60px;
     }
 
     #fuel {
@@ -66,19 +72,27 @@
       var plane = {
         name: "747-400",
         passangers: false,
-        fuel: false
+        fuel: false,
+        takeoff: false
       };
 
       var passangers = {
         number: 300,
         location: "terminal",
-        destination: "Cancun"
+        destination: "Cancun",
+        x:250,
+        y:60
       };
 
       var fuel = {
         lb: 100000,
-        x: 126,
-        y: 56
+        x: 130,
+        y: 60
+      };
+
+      var runway = {
+        x:160,
+        y:240
       };
 
       var positionLeft = 250;
@@ -110,17 +124,58 @@
           }
         }
         refueling();
+        boarding();
+        takeoff();
+        tower();
       };
 
       document.onkeydown = move;
 
       var refueling = function() {
-        if (( fuel.x - 15 <= positionLeft) && (fuel.y - 15 <= positionBottom) && ( fuel.x - 15 >= positionLeft) && (fuel.y - 15 >= positionBottom)) {
-          var refuel = confirm("Do you want to refuel");
-          plane.fuel = fuel.lb;
+        if (( fuel.x == positionLeft) && (fuel.y == positionBottom)) {
+          var refuel = confirm("Do you want to refuel?");
+          if (refuel) {
+            plane.fuel = fuel.lb;
+            alert("Your plane has full tanks")
+          }
+
+        }
+      };
+
+      var boarding = function() {
+        if (( passangers.x == positionLeft) && (passangers.y == positionBottom)) {
+          var boarding = confirm("Plane Ready for boarding?");
+          if (boarding) {
+            plane.passangers = passangers.number;
+            alert("Passangers are ready for departure");
+          }
+        }
+      };
+
+      var tower = function() {
+        if ((plane.passangers > 0) && (plane.fuel > 0)) {
+          if(plane.takeoff == false) {
+            alert("You are ready for takeoff please go to runway 02R");
+            plane.takeoff = true;
+          }
+        }
+      };
+
+
+      var takeoff = function() {
+        if ((runway.x == positionLeft) && (runway.y == positionBottom)) {
+          if ((plane.passangers > 0) && (plane.fuel > 0)){
+            alert("Clear for Takeoff")
+            airport.style["background-image"] = "url('http://www.nucarrentals.com/images/locations/mexico_cancun.jpg')";
+            airport.style["background-repeat"] = "no-repeat";
+            airport.style["background-size"] = "500px 320px";
+          }
+          else {
+            alert("You are NOT clear for takeoff")
+          }
         }
       };
 
   // </script>
-</body>
+  </body>
 </html>
