@@ -205,7 +205,7 @@ font-size: 30px;
 width: 1160px;
 margin-right: auto;
 margin-left: auto;
-background-color:rgba(1, 45, 49, 0.7);
+background: url("../img/congruent_outline.png");
 text-align: center;
 position: relative;
 top:200px;
@@ -220,7 +220,7 @@ footer {
   top:-80px;
   bottom: 0px;
   height: 150px;
-  background: url("../img/grey_wash_wall.png")
+  /*background: url("../img/grey_wash_wall.png")*/
 }
 
 .footer {
