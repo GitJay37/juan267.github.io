@@ -60,8 +60,8 @@ ul {
 header {
   position: relative;
   height: 400px;
-  top:29px;
-  background: url("../img/congruent_pentagon.png")
+  top:8px;
+  background: url("img/congruent_pentagon.png")
 }
 
 /* Content */
@@ -94,9 +94,6 @@ font-size: 30px;
   top:100px;
   border: 2px solid black;
   background-size: 100%,
-
-
-
 }
 
  #about-me img {
@@ -143,7 +140,7 @@ font-size: 30px;
   height: 990px;
   /*background-color: blue;*/
   top:0px;
-  background: url("../img/brickwall.png")
+  background: url("img/brickwall.png")
 
 }
 
@@ -153,15 +150,15 @@ font-size: 30px;
 
 #projects {
   position: relative;
-  height: 990px;
+  height: 790px;
   background-color: yellow;
   top:-18px;
-  background: url("../img/congruent_outline.png")
+  background: url("img/congruent_outline.png")
 }
 
 #projects table {
   position: relative;
-  top:200px;
+  top:90px;
   margin: 0 auto;
   height: 400px;
   width: 400px;
@@ -185,10 +182,10 @@ font-size: 30px;
 
 #blog {
   position: relative;
-  height: 990px;
+  height: 690px;
   background-color: black;
   top:-55px;
-  background: url("../img/pixeltokyo.jpeg")
+  background: url("img/pixeltokyo.jpeg")
 }
 
 #blog h3, p {
@@ -196,7 +193,8 @@ font-size: 30px;
 }
 
 #blog a {
-  color:#ffffff
+  color:#ffffff;
+  text-align: left;
 }
 
 
@@ -205,12 +203,16 @@ font-size: 30px;
 width: 1160px;
 margin-right: auto;
 margin-left: auto;
-background: url("../img/congruent_outline.png");
-text-align: center;
+background: url("img/congruent_outline.png");
+text-align: left;
 position: relative;
-top:200px;
-text-align: center;
+top:150px;
 font-size: 30px;
+}
+
+.container-b h1 {
+  color: white;
+  text-align: center;
 }
 
 
@@ -220,7 +222,7 @@ footer {
   top:-80px;
   bottom: 0px;
   height: 150px;
-  /*background: url("../img/grey_wash_wall.png")*/
+  /*background: url("img/grey_wash_wall.png")*/
 }
 
 .footer {
@@ -233,3 +235,49 @@ hr.separator {
 border-top: 5px solid rgba(255, 255, 255, 0.75);
 width: 30%;
 }
+
+
+#list {
+  width: 400px;
+}
+
+h2 {
+  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+  border: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #110;
+  display: block;
+  width: 500px;
+
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+li a:hover {
+  font-size: 30px;
+  background: /*#f6f6f6*/;
+}
+
+
